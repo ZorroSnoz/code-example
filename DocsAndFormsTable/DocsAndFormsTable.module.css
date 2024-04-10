@@ -1,0 +1,104 @@
+.wrapper {
+  position: relative;
+  background-color: var(--color-white);
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.table {
+  min-width: 650px;
+  height: 100%;
+}
+
+.table :global(.MuiTableCell-root.MuiTableCell-head) {
+  color: var(--color-text-button);
+  padding: 16px;
+  border-bottom: 1px solid var(--color-background-default);
+  line-height: 1;
+  vertical-align: top;
+}
+
+.table :global(.MuiTableRow-root) {
+  margin-bottom: 10px;
+}
+
+.table :global(.MuiTableRow-root.MuiTableRow-hover):hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.table
+  :global(.MuiTableRow-root.MuiTableRow-hover:hover)
+  :global(.MuiTableCell-root)
+  > div {
+  background-color: var(--color-background-default);
+}
+
+.table :global(.MuiTableCell-root) {
+  border-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+  padding-top: 8px;
+  color: var(--color-text-main);
+}
+
+.table :global(.MuiTableCell-root) > div {
+  padding: 8px 16px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  min-height: 40px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.table :global(.MuiTableCell-root:first-child) > div {
+  border-radius: 6px 0 0 6px;
+}
+
+.table :global(.MuiTableCell-root:last-child) > div {
+  border-radius: 0 6px 6px 0;
+}
+
+.selectedHead :global(.MuiTableCell-root.MuiTableCell-head) {
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+.sortableHead {
+  cursor: pointer;
+}
+
+.selectedRow {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.selectedRow :global(.MuiTableCell-root) > div {
+  background-color: var(--color-background-default);
+}
+
+.disabledRow :global(.MuiTableCell-root) {
+  color: var(--color-text-disabled);
+}
+
+.disabledRow :global(.MuiTableCell-root) :global(.svg-icon) {
+  opacity: 0.5;
+}
+
+.downloadButton {
+  margin-top: -4px;
+  margin-bottom: -2px;
+  margin-right: 4px;
+}
+
+.downloadButton svg {
+  fill: var(--color-button-text);
+}
+
+.downloadButton svg:hover {
+  fill: var(--color-button-hover);
+}

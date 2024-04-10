@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.pageSizeButtons {
+  margin-right: 32px;
+}
+
+.filterSelect {
+  margin-right: 32px;
+}

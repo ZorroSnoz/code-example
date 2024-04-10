@@ -1,0 +1,62 @@
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.dialogActions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 32px;
+}
+
+.idDocumentText {
+  margin-top: 0;
+}
+
+.formRow {
+  margin-bottom: 8px;
+}
+
+.formRow + .formRow {
+  margin-top: 24px;
+}
+
+.globalError {
+  color: var(--color-error-main);
+  font-size: 85%;
+}
+
+.statusText {
+  color: var(--color-text-button);
+  font-size: 85%;
+}
+
+.form {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.actions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: var(--color-white);
+  padding: 16px;
+  padding-right: 32px;
+  box-shadow: var(--color-background-default) 0 8px 24px;
+}
+
+.actions button + div {
+  margin-left: 16px !important;
+}
+
+.actionsContent {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+}
